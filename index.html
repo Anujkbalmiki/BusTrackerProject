@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Crown Bus Tracker</title>
   </head>
@@ -19,68 +22,116 @@
         <a href="#footer">About</a>
       </nav>
       <section id="home" class="hero">
-         <div class="imgcard">
-            <img src="./public/images/pic1.png" alt="crown-local">
-            <p><b><i>Crown Taloja By Lodha</i></b>, living becomes easy when home meets you with modern amenities and serene surroundings<br>Experience the perfect blend of comfort and convenience at <b><i>Crown Taloja By Lodha</i></b>, where living becomes easy when home meets you.</p>
-         </div>
+        <div class="imgcard">
+          <img src="./public/images/pic1.png" alt="crown-local" />
+          <p>
+            <b><i>Crown Taloja By Lodha</i></b
+            >, living becomes easy when home meets you with modern amenities and
+            serene surroundings<br />Experience the perfect blend of comfort and
+            convenience at <b><i>Crown Taloja By Lodha</i></b
+            >, where living becomes easy when home meets you.
+          </p>
+        </div>
       </section>
       <span>Service</span>
       <section id="service" class="service">
-         <p>A well-connected network of bus services is available to make your commute easy and affordable. Multiple routes serve the corridor between Crown Taloja and Dombivli Station, ensuring that you can find a bus at your convenience.</p>
-         <h3>Routes</h3>
-         <div id="loc" value="crown-taloja">Crown Taloja</div>
-         <div id="loc" value="katai-naka">Katai Naka</div>
-         <div id="loc" value="runwal-gardens-gate">Runwal Gardens Gate</div>
-         <div id="loc" value="dmart-road">D-Mart Road</div>
-         <div id="loc" value="aims-hospital-road">AIMS Hospital Road</div>
-         <div id="loc" value="pendharkar-college">Pendharkar College</div>
-         <div id="loc" value="dombivli-station">Dombivli Station</div>
-
-         <div class="route-selector">
-            <h3>Current location</h3>
-            <select id="routes" placeholder="Choose route">
-               <option value="choose route">Choose Route</option>
-               <option value="crown-taloja">Crown Taloja</option>
-               <option value="katai-naka">Katai Naka</option>
-               <option value="runwal-gardens-gate">Runwal Gardens Gate</option>
-               <option value="dmart-road">D-Mart Road</option>
-               <option value="aims-hospital-road">AIMS Hospital Road</option>
-               <option value="pendharkar-college">Pendharkar College</option>
-               <option value="dombivli-station">Dombivli Station</option>
-            </select>
-            <h3>Destination</h3>
-            <select id="routes" placeholder="Choose route">
-               <option value="choose route">Choose Route</option>
-               <option value="crown-taloja">Crown Taloja</option>
-               <option value="katai-naka">Katai Naka</option>
-               <option value="runwal-gardens-gate">Runwal Gardens Gate</option>
-               <option value="dmart-road">D-Mart Road</option>
-               <option value="aims-hospital-road">AIMS Hospital Road</option>
-               <option value="pendharkar-college">Pendharkar College</option>
-               <option value="dombivli-station">Dombivli Station</option>
-            </select>
-            <br>
-            <button class="search">Search</button>
+        <p>
+          A well-connected network of bus services is available to make your
+          commute easy and affordable. Multiple routes serve the corridor
+          between Crown Taloja and Dombivli Station, ensuring that you can find
+          a bus at your convenience.
+        </p>
+        <div class="route-collection">
+          <div class="route-1">
+            <h3>Dombivli Routes</h3>
+            <div id="loc" value="crown-taloja">Crown Taloja</div>
+            <div id="loc" value="katai-naka">Katai Naka</div>
+            <div id="loc" value="runwal-gardens-gate">Runwal Gardens Gate</div>
+            <div id="loc" value="dmart-road">D-Mart Road</div>
+            <div id="loc" value="aims-hospital-road">AIMS Hospital Road</div>
+            <div id="loc" value="pendharkar-college">Pendharkar College</div>
+            <div id="loc" value="dombivli-station">Dombivli Station</div>
+          </div>
+          <div class="route-2">
+            <h3>Xperia Routes</h3>
+            <div id="loc" value="crown-taloja">Crown Taloja</div>
+            <div id="loc" value="katai-naka">Katai Naka</div>
+            <div id="loc" value="palava-gate">Palava Gate</div>
+            <div id="loc" value="xperia-mall-road">Xperia Mall Road</div>
+          </div>
+          <div class="route-3">
+          <h3>Kharghar Routes</h3>
+          <div id="loc" value="crown-taloja">Crown Taloja</div>
+          <div id="loc" value="taloja-midc">Taloja MIDC</div>
+          <div id="loc" value="lodha-industrial">Lodha Industrial</div>
+          <div id="loc" value="pisarve-ground">Pisarve Ground</div>
+          <div id="loc" value="taloja-phase-1">Taloja Phase-1</div>
+          <div id="loc" value="sector-36">Sector 36</div>
+          <div id="loc" value="kharghar-station">Kharghar Station</div>
          </div>
+        </div>
+
+        <div class="route-selector">
+          <h3>Current location</h3>
+          <select id="routes" placeholder="Choose route">
+            <option value="choose route">Choose Route</option>
+            <option value="crown-taloja">Crown Taloja</option>
+            <option value="katai-naka">Katai Naka</option>
+            <option value="runwal-gardens-gate">Runwal Gardens Gate</option>
+            <option value="dmart-road">D-Mart Road</option>
+            <option value="aims-hospital-road">AIMS Hospital Road</option>
+            <option value="pendharkar-college">Pendharkar College</option>
+            <option value="dombivli-station">Dombivli Station</option>
+          </select>
+          <h3>Destination</h3>
+          <select id="routes" placeholder="Choose route">
+            <option value="choose route">Choose Route</option>
+            <option value="crown-taloja">Crown Taloja</option>
+            <option value="katai-naka">Katai Naka</option>
+            <option value="runwal-gardens-gate">Runwal Gardens Gate</option>
+            <option value="dmart-road">D-Mart Road</option>
+            <option value="aims-hospital-road">AIMS Hospital Road</option>
+            <option value="pendharkar-college">Pendharkar College</option>
+            <option value="dombivli-station">Dombivli Station</option>
+          </select>
+          <br />
+          <button class="search" onclick="searchRoute()">Search</button>
+          <div id="map" style="height: 300px; width: 100%; margin-top: 20px;"></div>
+        </div>
       </section>
       <span>Contact</span>
       <section id="contact" class="contact">
-         <h3>Get-in Touch</h3>
-         <p>We’d love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out. You can contact us via email, phone, or visit us at our office. We’re here to help!</p>
-         <form>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <input type="phone" placeholder="Phone" />
-            <textarea placeholder="Message"></textarea>
-            <button class="btn">Send Message</button>
-          </form>
+        <h3>Get-in Touch</h3>
+        <p>
+          We’d love to hear from you! Whether you have a question, feedback, or
+          just want to say hello, feel free to reach out. You can contact us via
+          email, phone, or visit us at our office. We’re here to help!
+        </p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="phone" placeholder="Phone" />
+          <textarea placeholder="Enter Message"></textarea>
+          <button class="btn">Send Message</button>
+        </form>
       </section>
       <footer id="About">
-         <p>&copy;Copyright 2024 Crown Taloja By Lodha. All Rights Reserved.</p>
-         <p>Created & Build By Anuj.</p>
+         <div class="descript-about">
+            <p>Follow for more such project building.</p> 
+               <img src="./public/images/insta.svg" alt="Instagram" />
+               <img src="./public/images/X.svg" alt="Twitter/X" />
+               <img src="./public/images/linkedin.svg" alt="LinkedIn" />
+               <img src="./public/images/git.svg" alt="GitHub" /><br>
+               <a href="https://www.instagram.com/anujkumar_04/" target="_blank">Instagram</a>
+               <a href="https://x.com/anujKBalmiki" target="_blank">X</a>
+               <a href="https://www.linkedin.com/in/anuj-balmiki-805277230/"
+                 target="_blank">LinkedIn</a>
+               <a href="https://github.com/Anujkbalmiki" target="_blank">GitHub</a>
+            </div>
+         <p> Crown Taloja By Lodha. All Rights Reserved.</p>
+         <p>&copy; Created & Build By Anuj.</p>
       </footer>
     </div>
-    <script src="./index.js"></script>
-    <button id="backToTop" class="back-to-top">↑</button>
+    <scrip src="./index.js"/>
   </body>
 </html>
