@@ -37,13 +37,20 @@ nav a:hover{
    padding: 10px;
    margin: 15px auto;
    width: 90%;
-   min-height: 100vh;
+   min-height: auto;
    background-color: bisque;
 }
 .imgcard {
    margin: auto;
    min-width: fit-content;
    padding: 8px;
+   width: 100%;
+}
+.imgcard img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   border-radius: 10px;
 }
 
 .imgcard > p{
@@ -51,7 +58,39 @@ nav a:hover{
    font-weight: 400;
    font-size: 1.5vmax;
    word-spacing: 2px;
+   text-align: center;
 }
+
+/* For tablet viewing experience */
+@media (max-width: 768px) {
+   .imgcard {
+       width: 90%;
+   }
+
+   .imgcard img {
+       border-radius: 8px;
+   }
+
+   .imgcard > p {
+       font-size: 1.2vmax;
+   }
+}
+/* For Smartphones */
+@media (max-width: 480px) {
+   .imgcard {
+       width: 100%;
+   }
+
+   .imgcard img {
+       border-radius: 5px;
+   }
+
+   .imgcard > p {
+       font-size: 1rem;
+       word-spacing: 1px;
+   }
+}
+/* End */
 
 span{
    color: navy;
@@ -87,6 +126,7 @@ span{
 }
 
 .route-1 #loc{
+   flex-flow: row;
    background-color: tomato;
    margin: 15px auto;
    padding: 10px;
@@ -125,16 +165,51 @@ span{
    border-radius: 25px;
    background-color: rgba(243, 253, 238, 0.235);
    padding: 10px 12px;
-   width: 23vw;
+   width: 20vw;
    height: 40vh;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
 }
+/* For tablet viewing experience */
+@media (max-width:768px) {
+   .route-selector{
+      width: 50vw;
+      height: auto;
+      padding: 20px;
+   }
+   select{
+      width: 80%;
+      padding: 8px;
+   }
+   .route-selector h3{
+      font-size: 1.2vmax;
+   }
+}
+@media (max-width:480px) {
+   .route-selector{
+      width: 90%;
+      height: auto;
+      padding: 15px;
+   }
+   select{
+      width: 90%;
+      padding: 8px;
+   }
+   .route-selector h3{
+      font-size: 1rem;
+   }
+   .search{
+      width: 80%;
+      padding: 8px;
+   }
+}
+/* End */
 h3{
    padding: 10px;
    font-size: 1.5vmax;
 }
 select{
    outline: none;
+   border: none;
    width: 15vw;
    padding: 10px;
    margin: 10px 0;
@@ -158,13 +233,7 @@ select{
    -ms-transform: scale(1.05);
    -o-transform: scale(1.05);
 }
-#map {
-   height: 40vmax;
-   width: 90%;
-   margin: 20px auto;
-   border-radius: 15px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+
 .contact{
    padding: 15px;
    margin: 15px auto;
@@ -230,4 +299,23 @@ footer > p {
    text-decoration: none;
    color:white;
    margin: 0.5vmax;
+}
+.back-to-top {
+   display: none;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+   background-color: #fe8707;
+   color: white;
+   border: none;
+   border-radius: 25px;
+   padding: 15px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+}
+
+.back-to-top:hover {
+   background-color: #2e7d32; 
 }
